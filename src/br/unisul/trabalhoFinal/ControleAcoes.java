@@ -1,4 +1,4 @@
-package br.unisul.trabalhoFinal;
+package br.engenhariapredial;
 
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -18,16 +18,13 @@ public class ControleAcoes {
         return ControleAcoes.instancia;
     }
 
-    public void menus(String opcao) {
+    public void menus(String opcao, String tipo) {
 
         //Registra as automações
         switch (opcao) {
             case "1":
-                String automocao = JOptionPane.showInputDialog("Informe o tipo da Automação: \n"
-                        + "1- Elétrica;\n"
-                        + "2- Mecânica;\n"
-                        + "3- Hidráulica.");
-                switch (automocao) {
+               
+                switch (tipo) {
                     case "1": {
                         //Registra os dados e adiciona ao ArrayList.
                         this.eletrica = new Eletrica();
@@ -77,13 +74,7 @@ public class ControleAcoes {
                 break;
 
             case "2":
-                String listar = JOptionPane.showInputDialog("Informe o tipo da Automação: \n"
-                        + "1- Elétrica;\n"
-                        + "2- Mecânica;\n"
-                        + "3- Hidráulica.");
-
-                switch (listar) {
-
+                switch (tipo) {
                     case "1": {
                         //Lista automações elétricas
                         String msg = "";
@@ -125,7 +116,7 @@ public class ControleAcoes {
                     }
 
                     case "3": {
-                        //Lista automações mecânicas
+                        //Lista automações
                         String msg = "";
                         for (int i = 0; i < listAutomacao.size(); i++) {
                             if (listAutomacao.get(i).getTipo().equals("Hidráulica")) {
@@ -168,7 +159,7 @@ public class ControleAcoes {
                 break;
 
             default:
-                JOptionPane.showMessageDialog(null, "OPÇÃO INVÁLIDA!");
+                
 
         }
     }

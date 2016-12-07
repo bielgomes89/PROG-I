@@ -1,4 +1,4 @@
-package br.unisul.trabalhoFinal;
+package br.engenhariapredial;
 
 public class Eletrica extends Automacao {
 
