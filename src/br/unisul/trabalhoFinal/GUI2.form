@@ -23,32 +23,33 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="textField1" alignment="0" min="-2" pref="370" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="Eletrica" min="-2" pref="119" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Mecanica" min="-2" pref="112" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="Mecanica" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="Hidraulica" min="-2" pref="119" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="label1" alignment="1" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
+              <Component id="label1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="textField1" min="-2" pref="57" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="Eletrica" alignment="0" pref="49" max="32767" attributes="0"/>
-                  <Component id="Mecanica" alignment="0" max="32767" attributes="0"/>
-                  <Component id="Hidraulica" alignment="0" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="Mecanica" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="Eletrica" min="-2" pref="38" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="Hidraulica" min="-2" pref="39" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -56,14 +57,6 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="java.awt.TextField" name="textField1">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="High Tower Text" size="35" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Registrar Automa&#xe7;&#xf5;es"/>
-      </Properties>
-    </Component>
     <Component class="java.awt.Button" name="Eletrica">
       <Properties>
         <Property name="actionCommand" type="java.lang.String" value="Eletrica"/>
@@ -89,6 +82,16 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HidraulicaActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="java.awt.Label" name="label1">
+      <Properties>
+        <Property name="alignment" type="int" value="1"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="34" style="1"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="Engenharia Predial" noResource="true"/>
+        <Property name="text" type="java.lang.String" value="Registrar Automa&#xe7;&#xf5;es"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
